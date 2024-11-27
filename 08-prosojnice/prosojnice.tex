@@ -1,4 +1,4 @@
-\documentclass{beamer} 
+\documentclass{beamer}
 % Naloga 1.3.1: Za dokument uporabite razred `beamer'.
 % Ne dodajajte nastavitve za velikost pisave, kot je bila v datoteki `5-prosojnice.tex`.
 
@@ -21,6 +21,14 @@
   \vfill
   \end{frame}
 }
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{array}
+\usetikzlibrary{math}
+\usepgfplotslibrary{external}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\CC}{\mathbb{C}}
 % Naloga 1.3.3: definirajte okolji `definicija' in `izrek'.
 % Namig: z iskanjem po datotekah (Ctrl+Shift+F oz. Cmd+Shift+F) 
 % poiščite niz `{definicija}' ali niz `{izrek}'.
@@ -53,37 +61,21 @@
     \tableofcontents
 \end{frame}
 \section{Paket \texttt{beamer}}
-\input{1-paket-beamer.tex}
-\begin{frame}
+\input{prosojnice/1-paket-beamer.tex}
 
-\frametitle{Paket \texttt{beamer}}
-\end{frame}
 \section{Paketa \texttt{amsmath} in \texttt{amsfonts}}
-\include{2-paketa-amsmath-amsfonts}
-\begin{frame}
+\include{prosojnice/2-paketa-amsmath-amsfonts}
 
-\frametitle{Paketa \texttt{amsmath} in \texttt{amsfonts}}
-\end{frame}
 \section[Matematika, 1. del\\\large{Analiza, logika, množice}]{Matematika, 1. del}
-\include{3-analiza-logika-mnozice}
-\begin{frame}
+\include{prosojnice/3-analiza-logika-mnozice}
 
-\frametitle{Matematika, 1. del\\\large{Analiza, logika, množice}}
-\end{frame}
 \section{Stolpci in slike}
-\begin{frame}
+\include{prosojnice/4-stolpci-slike}
 
-\frametitle{Stolpci in slike}
-\end{frame}
 \section{Paket \texttt{beamer} in tabele}
-\begin{frame}
+\include{prosojnice/5-beamer-tabele}
 
-\frametitle{Paket \texttt{beamer} in tabele}
-\end{frame}
 \section[Matematika, 2. del\\\large{Zaporedja, algebra, grupe}]{Matematika, 2. del}
-\begin{frame}
-
-\frametitle{Matematika, 2. del\\\large{Zaporedja, algebra, grupe}}
-\end{frame}
+\include{prosojnice/6-zaporedja-algebra-grupe}
 
 \end{document}
